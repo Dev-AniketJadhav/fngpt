@@ -9,7 +9,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 loader = CSVLoader(file_path=r'C:\Users\Acer\Downloads\custom_invoice - custom_invoice.csv (1).csv')
 index_creator = VectorstoreIndexCreator()
