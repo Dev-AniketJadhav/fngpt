@@ -1,0 +1,65 @@
+/* Container for the whole chat application */
+.chat-container {
+  background-color: #111b21; /* WhatsApp dark background color */
+  color: #e1e1e1; /* Light text color for readability */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Styles for the chat form */
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #2a2f32; /* Darker element background */
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #01a663; /* WhatsApp accent color */
+  color: #fff;
+}
+
+/* Container for the conversation */
+.conversation {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #0d1418; /* Dark background for conversation area */
+  border-radius: 8px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Styles for messages */
+.question, .answer {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 7.5px;
+  color: #fff;
+  word-wrap: break-word;
+  max-width: 75%;
+}
+
+.question {
+  background-color: #056162; 
+  align-self: flex-end;
+  margin-left: auto; 
+}
+
+.answer {
+  background-color: #262d31; 
+  align-self: flex-start;
+  margin-right: auto; /* Aligns messages to the left */
+}
